@@ -1,0 +1,154 @@
+#why-choose-us {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  padding-block: 50px;
+}
+#why-choose-us .why {
+  flex: 1;
+}
+#why-choose-us .why h2 {
+  font-size: 2.3em;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+#why-choose-us .why p {
+  color: #666;
+  line-height: 30px;
+}
+#why-choose-us .why #reasons-to-choose-us {
+  margin-block-start: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#why-choose-us .why #reasons-to-choose-us .reason-card {
+  width: 300px;
+}
+#why-choose-us .why #reasons-to-choose-us .reason-card h4 {
+  margin-block: 20px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  font-size: 1.2em;
+}
+#why-choose-us .why #reasons-to-choose-us .reason-card p i {
+  position: relative;
+}
+#why-choose-us .why #reasons-to-choose-us .reason-card p i:after {
+  position: absolute;
+  bottom: -10px;
+  right: -15px;
+  content: "";
+  background-color: #cbd5d1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#why-choose-us #image-container {
+  max-width: 530px;
+  max-height: 100%;
+  /* width: fit-content; */
+}
+#why-choose-us #image-container img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#team-presentation-section {
+  margin-bottom: 30px;
+}
+#team-presentation-section h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 450;
+  margin-bottom: 40px;
+}
+#team-presentation-section #members-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#team-presentation-section #members-container .member {
+  max-width: 500px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  box-shadow: 0 0 20px #bcbcbc;
+  padding: 15px;
+}
+#team-presentation-section #members-container .member img {
+  width: 100%;
+  object-fit: cover;
+}
+#team-presentation-section #members-container .member h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#team-presentation-section #members-container .member h4 {
+  color: #666;
+}
+#team-presentation-section #members-container .member p {
+  color: #666;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+#team-presentation-section #members-container .member .more-about-member-link {
+  color: #000;
+  font-size: 1.2em;
+}
+#team-presentation-section
+  #members-container
+  .member
+  .more-about-member-link:hover {
+  text-decoration: none;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+#why-choose-us,
+#team-presentation-section {
+  background-color: rgb(236, 246, 237);
+}
+#team-presentation-section {
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 1450px) {
+  #team-presentation-section #members-container {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  #team-presentation-section #members-container .member {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #why-choose-us {
+    display: block;
+  }
+  #why-choose-us #image-container {
+    min-width: calc(100% - 80px);
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  /* #why-choose-us #image-container img {
+    min-width: 500px;
+    max-width: 100%;
+  } */
+}

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+.section-padding {
+  padding: 20px 7%;
+}
+body {
+  overflow-x: hidden;
+  min-width: 300px;
+}
+.btn {
+  display: inline-flex;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media all and (max-width: 1270px) {
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media all and (max-width: 1175px) {
+  .section-padding {
+    padding-inline: 5%;
+  }
+}
+@media all and (max-width: 1000px) {
+  .section-padding {
+    padding-inline: 3%;
+  }
+}
